@@ -43,15 +43,32 @@ for Duracion_ in Duracion:
     duracion_lista.append(Duracion_.find(class_="field-content").string)
 #Localizacion de la Universidad
 localizaciones = soup.find_all(class_="titul-list-provincia text-right")
-localizaciones_list = list()
+localizaciones_lista = list()
 for localizacion in localizaciones:
-	localizaciones_list.append(localizacion)
+	localizaciones_lista.append(localizacion)
 #Web de la Universidad
 aux = soup.find_all(class_="Pincha para más info sobre esta titulación")
+web_lista = list()
 for web in aux:
-    web = web.find('href').string
+    web_lista.append(web.find('href').string)
 #Precio del primer curso
 precios = soup.find_all(class_='views-field views-field-field-precio-primer-ano')
-precios_list = list()
+precios_lista = list()
 for precio in precios:
-    precios_list.append(precio.find(class_='field-content').string)
+    precios_lista.append(precio.find(class_='field-content').string)
+
+class Resultado(object):
+    def __init__(self, grado, universidad, tipo_universidad, notas_corte, duracion, localizacion, web, precio):
+        self.grado = grado
+        self.universidad = universidad
+        self.tipo_universidad = tipo_universidad
+        self.notas_corte = notas_corte
+        self.duracion = duracion
+        self.localizacion = localizacion
+        self.web = web
+        self.precio = precio
+
+listadoResultados = list()
+for x in range(0, len(grados_lista) - 1, 1):
+	objeto = Resultado(grados_lista[x], universidad_lista[x], tipo_universidades_lista[x], notas_corte_lista[x], duracion_lista[x], localizaciones_lista[x], web_lista[x], precios_lista[x])
+	listadoResultados.append(objeto)
