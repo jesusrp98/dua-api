@@ -1,7 +1,6 @@
 import hug
 
-import internal
+import notas
 
 router = hug.route.API(__name__)
-router.get('/grados')(internal.root)
-router.get('/notas')(internal.root)
+router.get('/notas')(notas.root)
