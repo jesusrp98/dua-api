@@ -5,11 +5,8 @@ import requests
 
 def parsear(url):
     r = requests.get(url)
-    if(r.status_code != 200):
-        return False
 
-
-    soup = bs4.BeautifilSoup(r.content, features="html.parser")
+    soup = bs4.BeautifulSoup(r.text, 'html.parser')
 
     # Nombre de grados
     grados = soup.find_all(title='Pincha para más info sobre esta titulación')
@@ -26,7 +23,6 @@ def parsear(url):
     tipo_universidades = soup.find_all(class_='titul-list-modalidad text-right')
     tipo_universidades_lista = list()
     for tipo_universidad in universidades:
-        print(tipo_universidad.string)
         tipo_universidades_lista.append(tipo_universidad.string)
 
     #Nota de corte
@@ -49,7 +45,6 @@ def parsear(url):
 
     #Web de la Universidad
     aux = soup.find_all(title='Pincha para más info sobre esta titulación')
-    print(len(aux))
     web_lista = list()
     for web in aux:
         web_lista.append(web.string)
@@ -61,20 +56,10 @@ def parsear(url):
         precios_lista.append(precio.find(class_='field-content').string)
 
 
-    print(len(grados_lista))
-    print(len(universidad_lista))
-    print(len(tipo_universidades_lista))
-    print(len(notas_corte_lista))
-    print(len(duracion_lista))
-    print(len(localizaciones_lista))
-    print(len(web_lista))
-    print(len(precios_lista))
-
-
     listadoResultados = list()
     for x in range(0, len(grados_lista) - 1, 1):
         objeto = Resultado(grados_lista[x], universidad_lista[x], notas_corte_lista[x], duracion_lista[x], localizaciones_lista[x], web_lista[x], precios_lista[x])
         listadoResultados.append(json.dumps(vars(objeto), sort_keys=True, indent=4))
 
 
-    print(json.dumps(listadoResultados))
+    return json.dumps(listadoResultados)
