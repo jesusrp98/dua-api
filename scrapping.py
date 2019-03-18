@@ -35,3 +35,6 @@ localizacion = soup.find_all(class_="titul-list-provincia text-right")
 aux = soup.find_all(class_="titul-list-provincia text-right")
 web = aux.get('href')
 #Precio del primer curso
+precios = soup.find_all(class_='views-field views-field-field-precio-primer-ano')
+for precio in precios:
+    precio = precio.find(class_='field-content').string
