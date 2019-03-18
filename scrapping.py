@@ -21,3 +21,11 @@ for link in soup.find_all(title='Pincha para más info sobre esta titulación'):
 #       - Duracion
 #       - Universidad publica/privada
 #       - Precio del primer curso
+
+
+#funcion que imprime unicamente la nota de corte
+for link in soup.find_all(class_="titul-list-nota-corte-nota"):
+    print(link)
+
+#funcion que imprime unicamente a duracion de los grados
+for link in soup.find_all
