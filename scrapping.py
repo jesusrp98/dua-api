@@ -35,7 +35,7 @@ for Duracion_ in Duracion:
 localizacion = soup.find_all(class_="titul-list-provincia text-right")
 #Web de la Universidad
 aux = soup.find_all(class_="Pincha para más info sobre esta titulación")
-for web in aux
+for web in aux:
     web = web.find('href').string
 #Precio del primer curso
 precios = soup.find_all(class_='views-field views-field-field-precio-primer-ano')
