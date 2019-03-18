@@ -33,7 +33,7 @@ for universidad in universidades:
 tipo_universidades = soup.find_all(class_='label label-primary')
 tipo_universidades_lista = list()
 for tipo_universidad in universidades:
-    tipo_univerdidades_lista.append(tipo_universidad)
+    tipo_universidades_lista.append(tipo_universidad)
 #Nota de corte
 notas_corte = soup.find_all(class_="titul-list-nota-corte-nota")
 notas_corte_lista = list()
