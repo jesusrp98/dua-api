@@ -1,6 +1,7 @@
 import hug
 import json
 import requests
+from scrapping import *
 
 def root(region: hug.types.text = None, grado: hug.types.text = None, hug_timer = 2):
     # Notifica al usuario el resultado de la consulta
@@ -37,7 +38,7 @@ def root(region: hug.types.text = None, grado: hug.types.text = None, hug_timer 
           
           # Generamos la URL
           url = "https://notasdecorte.es/buscador-de-notas-de-corte?title={0}&term_node_tid_depth={1}".format(grado_code, city_code)
-          # llamamos a web-scrapping
+          result = parsear(url)
           
           message = "accept"
         else:

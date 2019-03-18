@@ -59,7 +59,7 @@ def parsear(url):
     listadoResultados = list()
     for x in range(0, len(grados_lista) - 1, 1):
         objeto = Resultado(grados_lista[x], universidad_lista[x], notas_corte_lista[x], duracion_lista[x], localizaciones_lista[x], web_lista[x], precios_lista[x])
-        listadoResultados.append(json.dumps(vars(objeto), sort_keys=True, indent=4))
+        listadoResultados.append(vars(objeto))
 
 
-    return json.dumps(listadoResultados)
+    return listadoResultados
