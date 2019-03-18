@@ -1,0 +1,1183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="es" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema# schema: http://schema.org/">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if IE]><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '940842599309157');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=940842599309157&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code --><link rel="shortcut icon" href="https://notasdecorte.es/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/notas-de-corte-16.png" type="image/png" />
+  <script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  var useSSL = 'https:' == document.location.protocol;
+  gads.src = (useSSL ? 'https:' : 'http:') +
+  '//www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+  })();
+  </script>
+
+  <script type='text/javascript'>
+  // GPT slots
+  var gptAdSlots = [];
+  googletag.cmd.push(function() {
+
+  // Define size mapping objects. The first parameter to addSize is
+  // a viewport size, while the second is a list of allowed ad sizes.
+
+  //There is one add size that can be shown both on small mobile screens and on tablets and desktops: 300x250
+  //When we include a 300x250 ad in a DFP line item, we have one of 2 intentions:
+  // 1) We want it to show both on mobile phone and larger screens
+  // 2) We want it to show only on mobile phone screens
+  //To deal with this, we need two mappings, one that allows 300x250 on large screens, and one that doesn't.
+
+  //Mapping for HORizontal banners (e.g. 728x90)
+  var mappingHor = googletag.sizeMapping().
+
+  // Don't show any adds if viewport isn't at least 320 x 200.
+  //Before Was set to 320 x 400, but for example Galaxy s6 in
+  //landscape is 640 x 360 and no adds would show at this size!!
+  addSize([0, 0], []).
+
+  // Accepts both common mobile banner formats
+  addSize([320, 200], [[320, 50], [320, 100]]).
+
+  // Same width as mapping above, more available height
+  addSize([320, 400], [300, 250]).
+
+  // Landscape tablet
+  addSize([750, 200], [[728, 90], [728, 15]]).
+
+  // Desktop
+  addSize([1050, 200], [[728, 90],[728, 15]]).build();
+
+  //Mapping for RECtangular and vertical banners (e.g. 300x250)
+  var mappingRec = googletag.sizeMapping().
+  addSize([0, 0], []).
+  addSize([320, 200], [[320, 50], [320, 100]]).
+  addSize([320, 400], [300, 250]).
+  addSize([750, 200], [[300, 250], [300, 600]]).build();
+
+    //Mapping: 300x250 Only for Mobile
+  var mappingSqrForMob = googletag.sizeMapping().
+  addSize([0, 0], []).
+  addSize([320, 200], [[320, 50], [320, 100]]).
+  addSize([320, 400], [[300, 250], [320, 100]]).
+  addSize([750, 200], [728, 90]).build();
+
+    //Mapping: 300x250 everywhere
+  var mappingSqrForAll = googletag.sizeMapping().
+  addSize([0, 0], []).
+  //Need to allow 300x250 even on smallest screens because this mapping
+  //is used for the pie de página, which must show 300x250 banner on small
+  //screens when a wallpaper ad is active.
+  addSize([320, 200], [[300, 250], [320, 100], [320, 50]]).
+  addSize([320, 400], [[300, 250], [320, 100]]).
+  addSize([750, 200], [300, 250]).build();
+
+  // Mapping for Wallpaper banner slot
+  var mappingWal = googletag.sizeMapping().
+  addSize([0, 0], []).
+  addSize([320, 200], [[320, 50], [320, 100]]).
+  addSize([750, 200], [[728, 90]]).
+  addSize([1180, 200], [[970, 66]]).build();
+
+gptAdSlots[0] = googletag.defineOutOfPageSlot('/1003065/NdcWallpaper', 'NdcWallpaper') . addService(googletag.pubads());
+gptAdSlots[1] = googletag.defineSlot('/1003065/NdcWallpaperTop', [[728, 90], [320, 100], [970,66]], 'NdcWallpaperTop').defineSizeMapping(mappingWal) . addService(googletag.pubads());
+gptAdSlots[2] = googletag.defineSlot('/1003065/NdcLstUndrttl', [[728, 90], [320, 100]], 'NdcLstUndrttl').defineSizeMapping(mappingHor) . addService(googletag.pubads());
+gptAdSlots[3] = googletag.defineSlot('/1003065/NdcLstSblTop', [[300, 250], [300, 600], [320, 100]], 'NdcLstSblTop').defineSizeMapping(mappingRec) . addService(googletag.pubads());
+gptAdSlots[4] = googletag.defineSlot('/1003065/NdcLstSblBot', [[300, 250], [300, 600], [320, 100]], 'NdcLstSblBot').defineSizeMapping(mappingRec) . addService(googletag.pubads());
+gptAdSlots[5] = googletag.defineSlot('/1003065/NdcLstBot', [[728, 90], [320, 100]], 'NdcLstBot').defineSizeMapping(mappingHor) . addService(googletag.pubads());
+googletag.pubads().setTargeting("tema-url","lang-es");
+  googletag.pubads().enableSingleRequest();
+  googletag.pubads().collapseEmptyDivs();
+  googletag.enableServices();
+  });
+  </script><script type='text/javascript'>
+var yieldlove_site_id = "notasdecorte.es_home";
+</script><script type='text/javascript' src='//cdn-a.yieldlove.com/yieldlove-bidder.js?notasdecorte.es_home'></script><link href="https://notasdecorte.es/ca/universidad-de-cordoba" rel="alternate" hreflang="ca" />
+<link href="https://notasdecorte.es/universidad-de-cordoba" rel="alternate" hreflang="es" />
+<meta name="google-site-verification" content="SkggTynv8-EehuKLKgT87j2XRTOkwpFmVB2ZtEQYvlE" /><meta name="description" content="Todas las Notas de Corte de la Universidad de Córdoba. Ver rápidamente las notas de corte de los grados que más te interesan. Actualizado para 2018." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://notasdecorte.es/universidad-de-cordoba" />
+<link rel="shortlink" href="https://notasdecorte.es/node/1399" />
+  <title>Notas de corte: Universidad de Córdoba 2018 | NotasDeCorte.es</title>
+  <link type="text/css" rel="stylesheet" href="/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/advagg_css/css__kOtq-3SeQ7OLAubxxQfZX8M9e9P721qKAy2c-i9D428__40IpCdh7L-Wfb3npLIi3nHqGoLcfCH5nrEqhfEuHisg__tabn1OJFdzdWzBTCQ0WIu_7XnELNd9rAWk5T_V0UDiY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/advagg_css/css__wVIcoih-n6jUmDzCdsOfJIOhLdtvDbdk0sCCXPaQt64__x0D8ni3xORWlqRrfcaV_HcyV-Z8qm3T8TP6xja2BJmc__tabn1OJFdzdWzBTCQ0WIu_7XnELNd9rAWk5T_V0UDiY.css" media="all" />
+<style>
+/* <![CDATA[ */
+#sliding-popup.sliding-popup-bottom{background:#0779bf}#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text p{color:#fff !important}
+/* ]]> */
+</style>
+<link type="text/css" rel="stylesheet" href="/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/advagg_css/css__mFhuz-uMrB4yWe2_sucYqyrZOlQRL6Oo2eJfBtp-Zyg__xD9HrKnJIcatQ9sDNYQApetReczKsWZRkKBz-SLMk3s__tabn1OJFdzdWzBTCQ0WIu_7XnELNd9rAWk5T_V0UDiY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.1.1/css/bootstrap.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/advagg_css/css__jIuLWGMrcR2Z5QW63tr6EfBgILdirixnB5mlLsZAC-4__g4PaWz8Eu8wZ05mCHq-OcFgRKR7szH7K9goVw0CyBrk__tabn1OJFdzdWzBTCQ0WIu_7XnELNd9rAWk5T_V0UDiY.css" media="all" />
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+window.google_analytics_uacct="UA-425501-10";
+//--><!]]>
+</script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery||document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/2.1/jquery.min.js'>\x3C/script>");
+//--><!]]>
+</script>
+<script type="text/javascript" src="/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/advagg_js/js__d2QBwugdbsup1jIKHOi7KS3w9C3_7mDDLrUAFsPtdyw__SqHJ5INW_1K-ds-r9i-PxEAR_nkHB7g7bAxHkbxiu3s__tabn1OJFdzdWzBTCQ0WIu_7XnELNd9rAWk5T_V0UDiY.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/advagg_js/js__KJE2toT1EU_x5vvmThD78LEGNVV1K5MDoTZGwyn0ry8__3YFfJZOjT0Xcsh9MGDoidhWZlfbgBVvB_hZGkuhdbWU__tabn1OJFdzdWzBTCQ0WIu_7XnELNd9rAWk5T_V0UDiY.js"></script>
+<script type="text/javascript" src="/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/advagg_js/js__dTRSuW27RiJte-z_L4Px_rno5dZsdWKiU3HtuBiTSmc__RPUH1Pa_09kAZ8D2-aMQ-HwAGT4k3LEND1qRE2SEZHM__tabn1OJFdzdWzBTCQ0WIu_7XnELNd9rAWk5T_V0UDiY.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://notasdecorte.es/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/googleanalytics/analytics.js?poidsu","ga");ga("create","UA-425501-10",{"cookieDomain":"auto"});ga("require","linkid","linkid.js");ga("send","pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/advagg_js/js__zX5SXtw-MvQ6jJddJbrXAb8gZZ6unAr5jYvGaC4u2RY__j4LfNMI88h15VVrp9vRLId-8rhDVipS662w2qSLuvw8__tabn1OJFdzdWzBTCQ0WIu_7XnELNd9rAWk5T_V0UDiY.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ndc_bootstrap_subtheme_2","theme_token":"E59QpO5G8V6HQyZGH4OxjRWZmBCFS-olPb5ld38KlaQ","css":{"modules\/system\/system.base.css":1,"sites\/all\/libraries\/chosen\/chosen.css":1,"sites\/all\/modules\/chosen\/css\/chosen-drupal.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"modules\/locale\/locale.css":1,"0":1,"sites\/all\/modules\/eu_cookie_compliance\/css\/eu_cookie_compliance.css":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.1.1\/css\/bootstrap.min.css":1,"sites\/all\/themes\/bootstrap\/css\/3.1.1\/overrides.min.css":1,"sites\/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io\/themes\/ndc_bootstrap_subtheme_2\/css\/style.css":1},"js":{"sites\/all\/modules\/eu_cookie_compliance\/js\/eu_cookie_compliance.js":1,"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/2.1.4\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/chosen\/chosen.jquery.min.js":1,"\/\/cdn.jsdelivr.net\/bootstrap\/3.1.1\/js\/bootstrap.min.js":1,"public:\/\/languages\/es_-HYc5uDnHTy7_NXHObZa4L5l4pt8hbGpCodA2VkfLGo.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"sites\/all\/modules\/chosen\/chosen.js":1}},"chosen":{"selector":"select:visible","minimum_single":20,"minimum_multiple":20,"minimum_width":200,"options":{"allow_single_deselect":false,"disable_search":false,"disable_search_threshold":20,"search_contains":true,"placeholder_text_multiple":"Choose some options","placeholder_text_single":"Choose an option","no_results_text":"No results match","inherit_select_classes":true}},"urlIsAjaxTrusted":{"https:\/\/notasdecorte.es\/buscador-de-notas-de-corte":true},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":1,"popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003E\u003Cstrong\u003EAVISO COOKIES: \u003C\/strong\u003EUsamos cookies propias y de terceros en este sitio web para personalizar el contenido y los anuncios, integrar contenido y funciones de otros servicios, y analizar el tr\u00e1fico. Compartimos informaci\u00f3n sobre el uso que haces del sitio web con nuestros partners de redes sociales, publicidad y an\u00e1lisis web, quienes pueden combinarla con otra informaci\u00f3n que les hayas proporcionado o que hayan recopilado a partir del uso que hayas hecho de sus servicios. Si sigues navegando en este sitio web, entendemos que aceptas su uso.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button\u0022\u003EOK\u003C\/button\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button\u0022\u003E+ Info PF\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      Gracias por aceptar las cookies.\u003Cp\u003EPuedes cerrar este mensaje, o leer m\u00e1s sobre los cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button\u0022\u003EOcultar\u003C\/button\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button\u0022 \u003EM\u00e1s info\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/node\/1","popup_link_new_window":1,"popup_position":null,"popup_language":"es","domain":""},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});
+//--><!]]>
+</script>
+  <script src="//load.sumome.com/" data-sumo-site-id="1c0b8e4bf50e8e83e03d7f2865197ce5cbd9913d98bb8dc2fd75fe9aa6e61bbe" async="async"></script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1399 node-type-universidad i18n-es navbar-is-fixed-top" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a>
+  </div>
+    <div class="region region-page-top">
+    <section id="block-cm-dfp-cm-dfp-wallpaper" class="block block-cm-dfp clearfix">
+
+      
+  <!-- DFP Wallpaper -->
+<div id='NdcWallpaper'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('NdcWallpaper'); });
+</script>
+</div>
+</section>
+  </div>
+  <header id="navbar" role="banner" class="navbar navbar-fixed-top navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+							<a class="logo navbar-btn pull-left" href="/" title="Inicio">
+					<img src="https://notasdecorte.es/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/notas-de-corte-logo-sm.png" alt="Inicio"/>
+				</a>
+			
+			
+			<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+					<div class="navbar-collapse collapse">
+				<nav role="navigation">
+											<ul class="menu nav navbar-nav"><li class="first last leaf"><a href="/home" title="">Inicio</a></li>
+</ul>																					  <div class="region region-navigation">
+    <section id="block-locale-language-content" class="block block-locale clearfix">
+
+      
+  <ul class="language-switcher-locale-url"><li class="ca first"><a href="/ca/universidad-de-cordoba" class="language-link" xml:lang="ca" hreflang="ca"><img class="language-icon img-responsive" typeof="foaf:Image" src="https://notasdecorte.es/sites/all/modules/languageicons/flags/ca.png" width="20" height="15" alt="Català" title="Català" /></a></li>
+<li class="es last active"><a href="/universidad-de-cordoba" class="language-link active" xml:lang="es" hreflang="es"><img class="language-icon img-responsive" typeof="foaf:Image" src="https://notasdecorte.es/sites/all/modules/languageicons/flags/es.png" width="20" height="15" alt="Español" title="Español" /></a></li>
+</ul>
+</section>
+  </div>
+									</nav>
+			</div>
+			</div>
+</header>
+<div id="meta-container">
+		  <div class="wallpaper_top container">
+		     <div class="region region-wallpaper-top">
+    <section id="block-cm-dfp-dfp-block-ndcwallpapertop" class="block block-cm-dfp clearfix">
+
+      
+  <!--NdcWallpaperTop-->
+<div id='NdcWallpaperTop' class='banner-ad text-center'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('NdcWallpaperTop'); });
+</script>
+</div>
+</section>
+  </div>
+	  </div> <!-- /.wallpaper_top -->
+				<div class="jumbotron">
+			<div class="container">
+				  <div class="region region-featured">
+    <section id="block-views-e6bd636937fce97b0d74cb85773c3dd8" class="block block-views clearfix">
+
+      
+  <form action="https://notasdecorte.es/buscador-de-notas-de-corte" method="get" id="views-exposed-form-notas-corte-por-estudio-panel-pane-ndc-buscador" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-title-wrapper" class="views-exposed-widget views-widget-filter-title">
+                  <label for="edit-title">
+            Carrera Universitaria          </label>
+                        <div class="views-widget">
+          <div class="form-item form-item-title form-type-textfield form-group"><input class="input-lg form-control form-text" type="text" id="edit-title" name="title" value="" size="30" maxlength="128" /></div>        </div>
+              </div>
+          <div id="edit-term-node-tid-depth-wrapper" class="views-exposed-widget views-widget-filter-term_node_tid_depth">
+                  <label for="edit-term-node-tid-depth">
+            Comunidad o Provincia          </label>
+                        <div class="views-widget">
+          <div class="form-item form-item-term-node-tid-depth form-type-select form-group"><select class="input-lg form-control form-select" id="edit-term-node-tid-depth" name="term_node_tid_depth"><option value="All" selected="selected">Toda España</option><option value="167">Andalucía</option><option value="225">-Almería</option><option value="168">-Cádiz</option><option value="170">-Córdoba</option><option value="172">-Granada</option><option value="224">-Huelva</option><option value="169">-Jaén</option><option value="235">-Málaga</option><option value="171">-Sevilla</option><option value="232">Aragón</option><option value="195">-Huesca</option><option value="197">-Teruel</option><option value="196">-Zaragoza</option><option value="177">Asturias</option><option value="189">-Asturias</option><option value="176">Cantabria</option><option value="190">-Cantabria</option><option value="184">Castilla y León</option><option value="210">-Ávila</option><option value="204">-Burgos</option><option value="202">-León</option><option value="203">-Palencia</option><option value="209">-Salamanca</option><option value="208">-Segovia</option><option value="207">-Soria</option><option value="206">-Valladolid</option><option value="205">-Zamora</option><option value="183">Castilla-La Mancha</option><option value="218">-Albacete</option><option value="217">-Ciudad Real</option><option value="216">-Cuenca</option><option value="214">-Guadalajara</option><option value="215">-Toledo</option><option value="231">Cataluña</option><option value="200">-Barcelona</option><option value="199">-Girona</option><option value="198">-LLeida</option><option value="201">-Tarragona</option><option value="236">Ceuta y Melilla</option><option value="229">-Ceuta</option><option value="230">-Melilla</option><option value="181">Valencia</option><option value="221">-Alicante</option><option value="220">-Castellón</option><option value="219">-Valencia</option><option value="182">Extremadura</option><option value="213">-Badajoz</option><option value="212">-Cáceres</option><option value="175">Galicia</option><option value="185">-A Coruña</option><option value="186">-Lugo</option><option value="188">-Ourense</option><option value="187">-Pontevedra</option><option value="222">Islas Baleares</option><option value="223">-Baleares</option><option value="233">Islas Canarias</option><option value="227">-Las Palmas</option><option value="228">-Santa Cruz</option><option value="178">La Rioja</option><option value="211">-La Rioja</option><option value="173">Madrid</option><option value="174">-Madrid</option><option value="226">Región de Murcia</option><option value="234">-Murcia</option><option value="180">Navarra</option><option value="194">-Navarra</option><option value="179">País Vasco</option><option value="192">-Álava</option><option value="193">-Guipúzcoa</option><option value="191">-Vizcaya</option></select></div>        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <button class="btn-primary btn-lg btn form-submit" type="submit" id="edit-submit-notas-corte-por-estudio" name="" value="Ver notas de corte">Ver notas de corte</button>
+    </div>
+      </div>
+</div>
+</div></form>
+</section>
+<section id="block-block-3" class="block block-block clearfix">
+
+      
+  <p>Consulta las últimas notas de corte para tu carrera y/o comunidad autónoma</p>
+
+</section>
+  </div>
+			</div>
+		</div> <!-- /.jumbotron -->
+		<div class="main-container container">
+
+		<header role="banner" id="page-header">
+			
+					</header>
+		<!-- /#page-header -->
+
+		<div class="row">
+
+			
+			<section class="col-sm-12">
+												<a id="main-content"></a>
+													<h1 class="page-header">Notas de Corte Universidad de Córdoba 2017-2018</h1>
+																																					  <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <div class="bootstrap-twocol-stacked" >
+      <div class="row">
+      <div class="panel-panel top col-xs-12 col-sm-12 col-md-12 col-lg-12"><div class="panel-pane pane-block pane-cm-dfp-dfp-block-ndclstundrttl"  >
+  
+      
+  
+  <div class="pane-content">
+    <!--NdcLstUndrttl-->
+<div id='NdcLstUndrttl' class='banner-ad text-center'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('NdcLstUndrttl'); });
+</script>
+</div>  </div>
+
+  
+  </div>
+<div class="panel-pane pane-custom pane-2"  >
+  
+      
+  
+  <div class="pane-content">
+    <p class = "lead">La nota de corte más alta de la Universidad de Córdoba en el curso 2017-2018 fue un 12,623 para estudiar el Grado en Medicina</p><p>Abajo se muestran datos de los 45 grados ofrecidos en la Universidad de Córdoba con sus notas de corte. La Universidad de Córdoba es una universidad pública.</p><p class="bg-info"><span class="label label-info">Importante:</span> <strong>Recuerda que es imposible saber de antemano qué nota de acceso tendrás que sacar para entrar en cualquier carrera de la Universidad de Córdoba este año.</strong> Las notas de corte del año pasado son sólo orientativas, ya que cambian cada año en función de la demanda y del número de plazas ofrecidas</p>  </div>
+
+  
+  </div>
+</div>
+    </div>
+  
+      <div class="row">
+      <div class="panel-panel left col-xs-12 col-sm-12 col-md-4 col-lg-4"><div class="panel-pane pane-block pane-cm-dfp-dfp-block-ndclstsbltop"  >
+  
+      
+  
+  <div class="pane-content">
+    <!--NdcLstSblTop-->
+<div id='NdcLstSblTop' class='banner-ad text-center'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('NdcLstSblTop'); });
+</script>
+</div>  </div>
+
+  
+  </div>
+<div class="panel-pane pane-block pane-cm-dfp-dfp-block-ndclstsblbot"  >
+  
+      
+  
+  <div class="pane-content">
+    <!--NdcLstSblBot-->
+<div id='NdcLstSblBot' class='banner-ad text-center'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('NdcLstSblBot'); });
+</script>
+</div>  </div>
+
+  
+  </div>
+</div>
+      <div class="panel-panel right col-xs-12 col-sm-12 col-md-8 col-lg-8"><div class="panel-pane pane-custom pane-1"  >
+  
+      
+  
+  <div class="pane-content">
+    <h2>Titulaciones</h2>  </div>
+
+  
+  </div>
+<div class="panel-pane pane-views-panes pane-notas-corte-por-estudio-panel-pane-1"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="view view-notas-corte-por-estudio view-id-notas_corte_por_estudio view-display-id-panel_pane_1 view-dom-id-2426f8d2e4dddd9add860047df83784b">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">12,623</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/12470-grado-medicina" title="Pincha para más info sobre esta titulación">Grado en Medicina</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/medicina/">http://www.uco.es/medicina/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">6,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/12470/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">11,660</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14787-grado-bioquimica" title="Pincha para más info sobre esta titulación">Grado en Bioquímica</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/organiza/centros/ciencias/">http://www.uco.es/organiza/centros/cienc...</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14787/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">10,863</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14783-grado-veterinaria" title="Pincha para más info sobre esta titulación">Grado en Veterinaria</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/veterinaria/">http://www.uco.es/veterinaria/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">5,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14783/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">10,656</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/12052-grado-enfermeria" title="Pincha para más info sobre esta titulación">Grado en Enfermería</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/medicina/">http://www.uco.es/medicina/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/12052/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-5 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">10,574</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/95453-grado-fisioterapia" title="Pincha para más info sobre esta titulación">Grado en Fisioterapia</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/medicina/">http://www.uco.es/medicina/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/95453/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-6 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">10,195</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14861-grado-traduccion-e-interpretacion-ingles" title="Pincha para más info sobre esta titulación">Grado en Traducción e Interpretación (Inglés)</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14861/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-7 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">9,920</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/95450-doble-grado-traduccion-e-interpretacion-ingles-filologia-hispanica" title="Pincha para más info sobre esta titulación">Doble Grado en Traducción e Interpretación Inglés + Filología Hispánica</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">5,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">no disponible</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/95450/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-8 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">9,700</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/95452-doble-grado-historia-historia-del-arte" title="Pincha para más info sobre esta titulación">Doble Grado en Historia + Historia del Arte</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">5,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">no disponible</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/95452/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-9 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">9,353</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/95454-doble-grado-estudios-ingleses-educacion-primaria-itinerario-bilinguee" title="Pincha para más info sobre esta titulación">Doble Grado en Estudios Ingleses + Educación Primaria (Itinerario Bilingüe)</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">5,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">no disponible</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/95454/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-10 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">8,280</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/12468-grado-administracion-y-direccion-de-empresas" title="Pincha para más info sobre esta titulación">Grado en Administración y Dirección de Empresas</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/derechoyccee/">http://www.uco.es/derechoyccee/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/12468/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-11 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">8,228</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/95451-doble-grado-traduccion-e-interpretacion-frances-filologia-hispanica" title="Pincha para más info sobre esta titulación">Doble Grado en Traducción e Interpretación Francés + Filología Hispánica</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">5,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">no disponible</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/95451/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-12 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">7,770</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/48258-grado-educacion-social" title="Pincha para más info sobre esta titulación">Grado en Educación Social</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/educacion/">http://www.uco.es/educacion/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/48258/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-13 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">7,754</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/24038-grado-traduccion-e-interpretacion-frances" title="Pincha para más info sobre esta titulación">Grado en Traducción e Interpretación (Francés)</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/24038/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-14 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">7,450</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/95449-doble-grado-turismo-traduccion-e-interpretacion-ingles" title="Pincha para más info sobre esta titulación">Doble Grado en Turismo + Traducción e Interpretación Inglés</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/trabajo/">http://www.uco.es/trabajo/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">6,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">no disponible</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/95449/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-15 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">7,405</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/32110-grado-ciencia-y-tecnologia-de-los-alimentos" title="Pincha para más info sobre esta titulación">Grado en Ciencia y Tecnología de los Alimentos</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/veterinaria/">http://www.uco.es/veterinaria/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/32110/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-16 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">7,140</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14863-grado-educacion-infantil" title="Pincha para más info sobre esta titulación">Grado en Educación Infantil</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/educacion/">http://www.uco.es/educacion/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14863/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-17 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">7,040</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/95455-grado-educacion-primaria-itinerario-bilinguee" title="Pincha para más info sobre esta titulación">Grado en Educación Primaria (Itinerario Bilingüe)</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/educacion/">http://www.uco.es/educacion/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/95455/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-18 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">7,028</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14864-grado-educacion-primaria" title="Pincha para más info sobre esta titulación">Grado en Educación Primaria</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/educacion/">http://www.uco.es/educacion/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14864/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-19 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">6,759</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14789-grado-fisica" title="Pincha para más info sobre esta titulación">Grado en Física</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/organiza/centros/ciencias/">http://www.uco.es/organiza/centros/cienc...</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14789/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-20 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">6,310</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/64844-doble-grado-traduccion-e-interpretacion-ingles-estudios-ingleses" title="Pincha para más info sobre esta titulación">Doble Grado en Traducción e Interpretación (inglés) + Estudios Ingleses</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">5,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">no disponible</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/64844/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-21 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">6,260</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14786-grado-biologia" title="Pincha para más info sobre esta titulación">Grado en Biología</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/organiza/centros/ciencias/">http://www.uco.es/organiza/centros/cienc...</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14786/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-22 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">6,150</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14791-grado-ingenieria-informatica" title="Pincha para más info sobre esta titulación">Grado en Ingeniería Informática</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/eps/">http://www.uco.es/eps/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14791/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-23 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,782</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/12469-grado-derecho" title="Pincha para más info sobre esta titulación">Grado en Derecho</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/derechoyccee/">http://www.uco.es/derechoyccee/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/12469/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-24 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,420</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/95456-grado-educacion-infantil-itinerario-bilinguee" title="Pincha para más info sobre esta titulación">Grado en Educación Infantil (Itinerario Bilingüe)</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/educacion/">http://www.uco.es/educacion/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/95456/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-25 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/48276-grado-gestion-cultural" title="Pincha para más info sobre esta titulación">Grado en Gestión Cultural</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/48276/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-26 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/140361-doble-grado-ingenieria-forestal-ingenieria-agroalimentaria-y-del-medio" title="Pincha para más info sobre esta titulación">Doble Grado en Ingeniería Forestal + Ingeniería Agroalimentaria y del Medio Rural</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/etsiam/">http://www.uco.es/etsiam/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">5,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">no disponible</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/140361/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-27 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/12467-grado-relaciones-laborales-y-recursos-humanos" title="Pincha para más info sobre esta titulación">Grado en Relaciones Laborales y Recursos Humanos</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/trabajo/">http://www.uco.es/trabajo/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/12467/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-28 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14857-grado-estudios-ingleses" title="Pincha para más info sobre esta titulación">Grado en Estudios Ingleses</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14857/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-29 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/140359-grado-cine-y-cultura" title="Pincha para más info sobre esta titulación">Grado en Cine y Cultura</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/140359/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-30 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14860-grado-historia-del-arte" title="Pincha para más info sobre esta titulación">Grado en Historia del Arte</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14860/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-31 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/64845-doble-grado-enologia-ingenieria-agroalimentaria-y-del-medio-rural" title="Pincha para más info sobre esta titulación">Doble Grado en Enología + Ingeniería Agroalimentaria y del Medio Rural</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/etsiam/">http://www.uco.es/etsiam/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">5,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">no disponible</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/64845/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-32 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14788-grado-quimica" title="Pincha para más info sobre esta titulación">Grado en Química</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/organiza/centros/ciencias/">http://www.uco.es/organiza/centros/cienc...</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14788/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-33 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14794-grado-ingenieria-mecanica" title="Pincha para más info sobre esta titulación">Grado en Ingeniería Mecánica</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/eps/">http://www.uco.es/eps/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14794/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-34 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14785-grado-ingenieria-forestal" title="Pincha para más info sobre esta titulación">Grado en Ingeniería Forestal</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/etsiam/">http://www.uco.es/etsiam/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14785/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-35 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/24039-doble-grado-ingenieria-civil-ingenieria-recursos-energeticos-y-mineros" title="Pincha para más info sobre esta titulación">Doble Grado en Ingeniería Civil + Ingeniería en Recursos Energéticos y Mineros</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/politecnica-belmez/">http://www.uco.es/politecnica-belmez/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">5,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">no disponible</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/24039/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-36 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14862-doble-grado-derecho-administracion-y-direccion-de-empresas" title="Pincha para más info sobre esta titulación">Doble Grado en Derecho + Administración y Dirección de Empresas</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/derechoyccee/">http://www.uco.es/derechoyccee/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content"></span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">no disponible</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14862/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-37 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14859-grado-historia" title="Pincha para más info sobre esta titulación">Grado en Historia</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14859/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-38 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14866-grado-turismo" title="Pincha para más info sobre esta titulación">Grado en Turismo</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/trabajo/">http://www.uco.es/trabajo/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14866/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-39 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14793-grado-ingenieria-electronica-industrial" title="Pincha para más info sobre esta titulación">Grado en Ingeniería Electrónica Industrial</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/eps/">http://www.uco.es/eps/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14793/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-40 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14790-grado-ciencias-ambientales" title="Pincha para más info sobre esta titulación">Grado en Ciencias Ambientales</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/organiza/centros/ciencias/">http://www.uco.es/organiza/centros/cienc...</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14790/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-41 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14796-grado-ingenieria-recursos-energeticos-y-mineros" title="Pincha para más info sobre esta titulación">Grado en Ingeniería en Recursos Energéticos y Mineros</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/politecnica-belmez/">http://www.uco.es/politecnica-belmez/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14796/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-42 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14784-grado-ingenieria-agroalimentaria-y-del-medio-rural" title="Pincha para más info sobre esta titulación">Grado en Ingeniería Agroalimentaria y del Medio Rural</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/etsiam/">http://www.uco.es/etsiam/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14784/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-43 views-row-odd clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14858-grado-filologia-hispanica" title="Pincha para más info sobre esta titulación">Grado en Filología Hispánica</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/filosofiayletras/">http://www.uco.es/filosofiayletras/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14858/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-44 views-row-even clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14795-grado-ingenieria-civil" title="Pincha para más info sobre esta titulación">Grado en Ingeniería Civil</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/politecnica-belmez/">http://www.uco.es/politecnica-belmez/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14795/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+  <div class="views-row views-row-45 views-row-odd views-row-last clearfix">
+      
+  <div class="pull-right titul-col-right">        <div><div class="titul-list-provincia text-right"><strong>Córdoba</strong></div>
+<div class="titul-list-modalidad text-right">Presencial</div>
+<div class="titul-list-nota-corte bg-primary text-center">
+    <div class="titul-list-nota-corte-label"><small>Nota de corte</small></div>
+    <div class="titul-list-nota-corte-nota">5,000</div>
+</div></div>  </div>  
+  <div>        <span><a href="http://yaq.es/carreras-universitarias/uco-universidad-de-cordoba/14792-grado-ingenieria-electrica" title="Pincha para más info sobre esta titulación">Grado en Ingeniería Eléctrica</a></span>  </div>  
+  <div class="views-field views-field-field-universidad-id">        <div class="field-content"><a href="http://yaq.es/centro/universidad-cordoba " title="Pincha para más titulaciónes de esta universidad">Universidad de Córdoba</a></div>  </div>  
+  <div class="views-field views-field-field-tipo-centro">        <div class="field-content"><span class="label label-primary">Universidad Pública</span></div>  </div>  
+  <span class="views-field views-field-field-yaq-facultad-web">    <span class="views-label views-label-field-yaq-facultad-web">Web de la facultad: </span>    <span class="field-content"><a href="http://www.uco.es/eps/">http://www.uco.es/eps/</a></span>  </span>  
+  <div class="views-field views-field-field-duracion">    <span class="views-label views-label-field-duracion">Duración: </span>    <span class="field-content">4,0 años</span>  </div>  
+  <div class="views-field views-field-field-precio-primer-ano">    <span class="views-label views-label-field-precio-primer-ano">Precio del primer curso: </span>    <span class="field-content">757 €</span>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  
+  <div>        <div><a href="http://yaq.es/user/register/14792/dmm" class="info-link btn btn-success"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Pídeles información ¡GRATIS!</a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+</div>
+    </div>
+  
+      <div class="row">
+      <div class="panel-panel bottom col-xs-12 col-sm-12 col-md-12 col-lg-12"><div class="panel-pane pane-block pane-cm-dfp-dfp-block-ndclstbot"  >
+  
+      
+  
+  <div class="pane-content">
+    <!--NdcLstBot-->
+<div id='NdcLstBot' class='banner-ad text-center'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('NdcLstBot'); });
+</script>
+</div>  </div>
+
+  
+  </div>
+</div>
+    </div>
+  </div>
+
+</section>
+  </div>
+			</section>
+
+			
+		</div>
+	</div>
+</div>
+<footer class="footer container">
+	  <div class="region region-footer">
+    <section id="block-block-10" class="block block-block clearfix">
+
+        <h2 class="block-title">Cóntáctanos</h2>
+    
+  <ul class="list-unstyled"><li><strong>Dirección:</strong> Diego de León 47, 28006 Madrid ESPAÑA</li>
+  <li><strong>Teléfono:</strong> +34 91 593 2767</li>
+  <li><strong>Email:</strong> info (arroba) yaq.es</li>
+</ul>
+</section>
+<section id="block-cm-legal-cm-legal" class="block block-cm-legal clearfix">
+
+        <h2 class="block-title">Información legal</h2>
+    
+  <div class="item-list"><ul class="list-unstyled"><li class="first"><a href="/aviso-legal">Aviso legal</a></li>
+<li><a href="/politica-privacidad">Política de privacidad</a></li>
+<li><a href="/condiciones-generales-contratacion">Condiciones generales de contratación</a></li>
+<li class="last"><a href="/politica-cookies">Política de cookies</a></li>
+</ul></div>
+</section>
+  </div>
+	  <div class="region region-subfooter">
+    <section id="block-block-21" class="block block-block clearfix">
+
+      
+  NotasdeCorte.es es un servicio de <a href="http://yaq.es"><img src="https://notasdecorte.es/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/themes/ndc_bootstrap_subtheme_2/imagenes/yaq_sm.png"></a>, la comunidad social de los universitarios. <a href="http://yaq.es/user">Regístrate</a>
+</section>
+  </div>
+</footer>
+<script type="text/javascript">
+	</script>
+<script type="text/javascript">
+	(function ($) {
+		var distancia = "A distancia";
+		var presencial = "Presencial";
+		var semipresencial = "Semipresencial";
+		var distanciat = "A distancia";
+		var semipresencialt = "Semipresencial";
+		var presencialt = "Presencial";
+		$('.view-notas-corte-por-estudio .titul-list-modalidad').each(function () {
+			var modalidad = $(this).text();
+			if (modalidad == presencial) {
+				$(this).text(presencialt);
+			}
+			else if (modalidad == semipresencial) {
+				$(this).text(semipresencialt);
+			}
+			else if
+			(modalidad == distancia) {
+				$(this).text(distanciat);
+			}
+		});
+	})(jQuery)
+</script>
+  <script type="text/javascript" src="/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/advagg_js/js__v_4yJHVtE6RUu6yqhWqVJhN8cT82FDxs_Va_i0KPQGA__w5t7T5sSQWZqyRBRSI1jPKVo3qJ6imXeUlk0giATltQ__tabn1OJFdzdWzBTCQ0WIu_7XnELNd9rAWk5T_V0UDiY.js"></script>
+<script type="text/javascript" src="/sites/ndc-170126.prod.o5036601099.v2.s5.ams.boa.io/files/advagg_js/js__i11V-7AETPhfL9YzRpXBpECwVkYyQ_ahu2eHxES_mK0__5pWByCSRwqbOBJaMPsumH-tFSQOAyWkJ9hD4ugidjsY__tabn1OJFdzdWzBTCQ0WIu_7XnELNd9rAWk5T_V0UDiY.js"></script>
+</body>
+</html>
+
+<!-- Page cached by Boost @ 2019-03-18 09:19:00, expires @ 2019-04-15 10:19:00, lifetime 4 semanas -->
