@@ -25,7 +25,10 @@ for link in soup.find_all(title='Pincha para más info sobre esta titulación'):
 
 #funcion que imprime unicamente la nota de corte
 for link in soup.find_all(class_="titul-list-nota-corte-nota"):
-    print(link)
+    print(link.string)
 
 #funcion que imprime unicamente a duracion de los grados
-for link in soup.find_all
+Duracion= soup.find_all(class_="views-field views-field-field-duracion")
+for Duracion_ in Duracion:
+    Duracion_=Duracion_.find(class_="field-content")
+    print(Duracion_.string)
