@@ -23,3 +23,11 @@ tipo_universidad = soup.find_all(class_='label label-primary')
 #       - Duracion
 #       - Universidad publica/privada Hecho
 #       - Precio del primer curso
+
+
+#funcion que imprime unicamente la nota de corte
+for link in soup.find_all(class_="titul-list-nota-corte-nota"):
+    print(link)
+
+#funcion que imprime unicamente a duracion de los grados
+for link in soup.find_all
