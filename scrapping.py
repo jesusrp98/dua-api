@@ -13,7 +13,7 @@ with open("ejemplo.html") as fp:
 #       - Nota de Corte HECHO
 #       - Duracion HECHO
 #       - Localizacion de la Universidad HECHO
-#       - Web de la Univesidad 
+#       - Web de la Univesidad HECHO
 #       - Precio del primer curso HECHO
 
 # Nombre de grados
@@ -57,7 +57,7 @@ precios_lista = list()
 for precio in precios:
     precios_lista.append(precio.find(class_='field-content').string)
 
-class Resultado(object):
+class Resultado:
     def __init__(self, grado, universidad, tipo_universidad, notas_corte, duracion, localizacion, web, precio):
         self.grado = grado
         self.universidad = universidad
